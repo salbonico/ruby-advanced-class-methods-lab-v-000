@@ -48,9 +48,7 @@ def self.find_or_create_by_name(name)
 end
 
 def self.alphabetical
-  song_names = []
   return self.all.sort_by{|object| object.name}
-
 end
 
 end
