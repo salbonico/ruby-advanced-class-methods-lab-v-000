@@ -36,6 +36,10 @@ def self.find_by_name(name)
       return object
     end
 end
+return false 
 end
+
+
+
 
 end
