@@ -63,6 +63,8 @@ def self.create_from_filename(filename)
 self.new_from_filename(filename).save
 end
 
-
+def self.destroy_all
+  self.all.clear 
+end
 
 end
