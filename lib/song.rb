@@ -59,4 +59,10 @@ def self.new_from_filename(filename)
   return song
 end
 
+def self.create_from_filename(filename)
+self.create_from_filename.save
+end
+
+
+
 end
