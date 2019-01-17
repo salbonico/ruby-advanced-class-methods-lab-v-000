@@ -51,5 +51,5 @@ def self.alphabetical
   song_names = self.all.keys
   song_names.sort!
   return song_names
-
+end
 end
