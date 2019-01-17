@@ -52,9 +52,9 @@ def self.alphabetical
 end
 
 def self.new_from_filename(filename)
-  array_of_inputs = filename.chomp(".mp3").split("-")
+  array_of_inputs = filename.chomp(".mp3").split(" - ")
   song = self.new
-  song.name = array_of_inputs[2]
+  song.name = array_of_inputs[1]
   song.artist_name = array_of_inputs[0]
   return song
 end
