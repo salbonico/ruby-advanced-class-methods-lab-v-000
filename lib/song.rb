@@ -49,11 +49,8 @@ end
 
 def self.alphabetical
   song_names = []
-  self.all.each do |object|
-    song_names.push(object.name)
-  end
-  song_names.sort!
-  return song_names
+  return self.all.sort_by{|object| object.name}
+  
 end
 
 end
