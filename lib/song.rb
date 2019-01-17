@@ -51,4 +51,11 @@ def self.alphabetical
   return self.all.sort_by{|object| object.name}
 end
 
+def self.new_from_filename(filename)
+  array_of_inputs = filename.chomp(".mp3").split(" ")
+  song = self.new
+  song.name = array_of_inputs[2]
+  song.artist_name = array_of_inputs[0]
+end
+
 end
