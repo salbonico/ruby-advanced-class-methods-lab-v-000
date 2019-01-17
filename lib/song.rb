@@ -50,7 +50,7 @@ end
 def self.alphabetical
   song_names = []
   return self.all.sort_by{|object| object.name}
-  
+
 end
 
 end
