@@ -60,7 +60,7 @@ def self.new_from_filename(filename)
 end
 
 def self.create_from_filename(filename)
-self.create_from_filename.save
+self.create_from_filename(filename).save
 end
 
 
