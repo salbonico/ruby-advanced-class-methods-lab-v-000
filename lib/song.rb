@@ -54,7 +54,7 @@ end
 def self.new_from_filename(filename)
   array_of_inputs = filename.chomp(".mp3").split(" ")
   song = self.new
-  
+
   song.artist_name = array_of_inputs[0]
 end
 
