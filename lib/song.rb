@@ -31,7 +31,7 @@ def self.create_by_name(name)
 end
 
 def self.find_by_name(name)
-  self.class.all.each do |object|
+  self.all.each do |object|
     if object.name == name
       return object
     end
