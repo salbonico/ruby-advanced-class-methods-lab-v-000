@@ -47,5 +47,9 @@ def self.find_or_create_by_name(name)
   end
 end
 
+def self.alphabetical
+  song_names = self.all.keys
+  song_names.sort!
+  return song_names
 
 end
