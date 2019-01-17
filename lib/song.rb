@@ -30,4 +30,12 @@ def self.create_by_name(name)
   return song
 end
 
+def self.find_by_name(name)
+  self.class.all.each do |object|
+    if object.name == name
+      return object
+    end
+end
+end
+
 end
